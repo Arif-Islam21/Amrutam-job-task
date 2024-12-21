@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router";
-import App from "../App";
+import MainLayout from "../Layouts/MainLayout";
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<MainLayout />} />
     </Routes>
   );
 };
