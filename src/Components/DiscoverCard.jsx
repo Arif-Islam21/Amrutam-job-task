@@ -6,7 +6,7 @@ const DiscoverCard = ({ left }) => {
     <div className={`flex gap-4 ${left && "flex-row-reverse"} items-center`}>
       <div className="min-w-52 text-center">
         <h2 className="font-bold">Personalized Wellness</h2>
-        <p className="text-sm w-full">
+        <p className="text-sm w-full text-gray-600">
           Get treatments made just for you based on your individual doshas (
           body type)
         </p>

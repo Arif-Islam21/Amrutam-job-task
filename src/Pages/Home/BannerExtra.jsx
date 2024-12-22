@@ -8,7 +8,7 @@ const BannerExtra = () => {
   return (
     <div className="bg-primary">
       <div className="container mx-auto">
-        <div className="flex gap-3 justify-center">
+        <div className="flex flex-col lg:flex-row gap-3 justify-center">
           <BannerExtraCard
             icon={<LuMessageCircleMore size={28} />}
             text="convenient online & In-clinic consultations"

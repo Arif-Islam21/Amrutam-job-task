@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <div
-      className="hero min-h-[80vh]"
+      className="hero min-h-screen lg:min-h-[80vh]"
       style={{
         backgroundImage:
           "url(https://t4.ftcdn.net/jpg/05/90/17/23/360_F_590172388_eEZ8vGqNqAtYSNP7LcRTMyl0db5kemNX.jpg)",
@@ -14,7 +14,7 @@ const Banner = () => {
             <h3 className="text-2xl text-white font-light mb-4">
               Namaste, Welcome to Amrutam
             </h3>
-            <h1 className="mb-5 text-5xl font-bold">
+            <h1 className="mb-5 text-2xl lg:text-5xl font-bold">
               Step into Holistic Healing with{" "}
               <span className="underline">Ayurveda</span> <br /> Book
               Consultation with certified Experts.
