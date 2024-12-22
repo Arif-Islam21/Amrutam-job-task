@@ -15,8 +15,9 @@ const Banner = () => {
               Namaste, Welcome to Amrutam
             </h3>
             <h1 className="mb-5 text-5xl font-bold">
-              Step into Holistic Healing with Ayurveda <br /> Book Consultation
-              with certified Experts.
+              Step into Holistic Healing with{" "}
+              <span className="underline">Ayurveda</span> <br /> Book
+              Consultation with certified Experts.
             </h1>
             <p className="mb-5 max-w-lg">
               Dive into the world of ayurveda and Experience Personalized Health
