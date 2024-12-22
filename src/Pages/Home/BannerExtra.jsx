@@ -7,7 +7,7 @@ import { FaFilePrescription } from "react-icons/fa";
 const BannerExtra = () => {
   return (
     <div className="bg-primary">
-      <div className="container mx-auto">
+      <div className="container mx-auto py-6">
         <div className="flex flex-col lg:flex-row gap-3 justify-center">
           <BannerExtraCard
             icon={<LuMessageCircleMore size={28} />}
