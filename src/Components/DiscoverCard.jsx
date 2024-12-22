@@ -1,9 +1,10 @@
 import { TbHeartPlus } from "react-icons/tb";
 
-const DiscoverCard = () => {
+// eslint-disable-next-line react/prop-types
+const DiscoverCard = ({ left }) => {
   return (
-    <div className="flex gap-4 items-center">
-      <div className="min-w-52">
+    <div className={`flex gap-4 ${left && "flex-row-reverse"} items-center`}>
+      <div className="min-w-52 text-center">
         <h2 className="font-bold">Personalized Wellness</h2>
         <p className="text-sm w-full">
           Get treatments made just for you based on your individual doshas (

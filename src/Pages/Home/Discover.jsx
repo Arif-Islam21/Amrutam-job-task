@@ -16,18 +16,32 @@ const Discover = () => {
             <div className="order-1 lg:order-2 mx-4">
               <img
                 src="https://img.freepik.com/premium-photo/serene-meditation-nature-background_391229-18765.jpg?ga=GA1.1.481348862.1727083279&semt=ais_hybrid"
-                className="max-w-xs rounded-lg shadow-2xl"
+                className="max-w-xs rounded-full shadow-2xl"
               />
             </div>
             <div className="order-2 lg:order-1 flex flex-col gap-8">
-              <DiscoverCard />
-              <DiscoverCard />
-              <DiscoverCard />
+              {Array(3)
+                .fill()
+                .map((_, idx) => (
+                  <div
+                    key={idx}
+                    className={idx === 1 ? "-ml-6 mr-6" : "-mr-6 ml-6"}
+                  >
+                    <DiscoverCard />
+                  </div>
+                ))}
             </div>
             <div className="order-3 flex flex-col gap-8">
-              <DiscoverCard />
-              <DiscoverCard />
-              <DiscoverCard />
+              {Array(3)
+                .fill()
+                .map((_, idx) => (
+                  <div
+                    key={idx}
+                    className={idx === 1 ? "ml-6 -mr-6" : "mr-6 -ml-6"}
+                  >
+                    <DiscoverCard left={true} />
+                  </div>
+                ))}
             </div>
           </div>
         </div>
