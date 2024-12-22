@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 const BannerExtraCard = ({ icon, text }) => {
   return (
     <div className="flex justify-center py-4 items-center gap-2">
