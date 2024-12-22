@@ -1,7 +1,58 @@
+import { TbHeartPlus } from "react-icons/tb";
 import DiscoverCard from "../../Components/DiscoverCard";
 import SectionTitle from "../../Components/SectionTitle";
+import { FaHandsHoldingCircle } from "react-icons/fa6";
+import { GiMeditation } from "react-icons/gi";
 
 const Discover = () => {
+  const firstThree = [
+    {
+      name: "Personalized Wellness",
+      description:
+        "Get treatments made just for you based on your individual doshas ( body type)",
+      icon: <TbHeartPlus size={40} />,
+      textColor: "#2f96d6",
+      bgColor: "#2f96d64f",
+    },
+    {
+      name: "Focus on prevention",
+      description: "Stop problems even before they start.",
+      icon: <FaHandsHoldingCircle size={40} />,
+      textColor: "#0c590c",
+      bgColor: "#95f095",
+    },
+    {
+      name: "Mind-Body Connection",
+      description: "Keep your mind and body in sync for a happy life.",
+      icon: <GiMeditation size={40} />,
+      textColor: "#e98686",
+      bgColor: "#FCF1F1",
+    },
+  ];
+  const secondThree = [
+    {
+      name: "Personalized Wellness",
+      description:
+        "Get treatments made just for you based on your individual doshas ( body type)",
+      icon: <TbHeartPlus size={40} />,
+      textColor: "#2f96d6",
+      bgColor: "#2f96d64f",
+    },
+    {
+      name: "Focus on prevention",
+      description: "Stop problems even before they start.",
+      icon: <FaHandsHoldingCircle size={40} />,
+      textColor: "#0c590c",
+      bgColor: "#95f095",
+    },
+    {
+      name: "Mind-Body Connection",
+      description: "Keep your mind and body in sync for a happy life.",
+      icon: <GiMeditation size={40} />,
+      textColor: "#e98686",
+      bgColor: "#FCF1F1",
+    },
+  ];
   return (
     <div>
       <div className="container mx-auto">
@@ -21,33 +72,42 @@ const Discover = () => {
             </div>
             <div className="order-2 lg:order-1 flex flex-col gap-8">
               {/* grid grid-cols-1 sm:grid-cols-2 sm:gap-4 lg:grid-cols-1 lg:gap-8 w-full lg:w-auto */}
-              {Array(3)
-                .fill()
-                .map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={
-                      idx === 1 ? "lg:-ml-6 lg:mr-6" : "lg:-mr-6 lg:ml-6"
-                    }
-                  >
-                    <DiscoverCard />
-                  </div>
-                ))}
+              {firstThree.map((item, idx) => (
+                <div
+                  key={idx}
+                  className={
+                    idx === 1 ? "lg:-ml-6 lg:mr-6" : "lg:-mr-6 lg:ml-6"
+                  }
+                >
+                  <DiscoverCard
+                    name={item.name}
+                    description={item.description}
+                    icon={item.icon}
+                    textColor={item.textColor}
+                    bgColor={item.bgColor}
+                  />
+                </div>
+              ))}
             </div>
             <div className="order-3 flex flex-col gap-8">
               {/* grid grid-cols-1 sm:grid-cols-2 sm:gap-4 lg:grid-cols-1 lg:gap-8 w-full lg:w-auto */}
-              {Array(3)
-                .fill()
-                .map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={
-                      idx === 1 ? "lg:ml-6 lg:-mr-6" : "lg:mr-6 lg:-ml-6"
-                    }
-                  >
-                    <DiscoverCard left={true} />
-                  </div>
-                ))}
+              {secondThree.map((item, idx) => (
+                <div
+                  key={idx}
+                  className={
+                    idx === 1 ? "lg:ml-6 lg:-mr-6" : "lg:mr-6 lg:-ml-6"
+                  }
+                >
+                  <DiscoverCard
+                    name={item.name}
+                    description={item.description}
+                    icon={item.icon}
+                    textColor={item.textColor}
+                    bgColor={item.bgColor}
+                    left={true}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
