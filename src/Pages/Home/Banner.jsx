@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <div
-      className="hero min-h-screen lg:min-h-[80vh]"
+      className="hero bg-fixed bg-center bg-cover min-h-screen lg:min-h-[80vh]"
       style={{
         backgroundImage:
           "url(https://t4.ftcdn.net/jpg/05/90/17/23/360_F_590172388_eEZ8vGqNqAtYSNP7LcRTMyl0db5kemNX.jpg)",
