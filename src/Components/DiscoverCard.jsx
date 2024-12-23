@@ -16,12 +16,12 @@ const DiscoverCard = ({
     >
       <div className="min-w-52 text-center">
         <h2 className="font-bold">{name}</h2>
-        <p className="text-sm text-center px-10 mt-4 w-full text-gray-600">
+        <p className="text-sm text-center px-10 lg:mt-0 mt-4 w-full text-gray-600">
           {description}
         </p>
       </div>
       <div
-        className={`text-[${textColor}] border rounded-full p-4 bg-[${bgColor}]`}
+        className={`text-${textColor} border rounded-full p-4 bg-${bgColor}`}
       >
         {icon}
       </div>
