@@ -20,7 +20,7 @@ const Consultation = () => {
             <img
               src={consult2}
               alt="image here"
-              className="rounded-xl shadow-md min-h-full"
+              className="rounded-xl shadow-md min-h-full w-full"
             />
           </div>
           <div className="col-span-12 lg:col-span-3">
@@ -39,7 +39,7 @@ const Consultation = () => {
             <img
               src={consult1}
               alt="image here"
-              className="rounded-xl shadow-md min-h-full"
+              className="rounded-xl shadow-md min-h-full w-full"
             />
           </div>
           <div className="col-span-12 lg:col-span-3">
@@ -52,7 +52,7 @@ const Consultation = () => {
             <img
               src={consult3}
               alt="image here"
-              className="rounded-xl shadow-md min-h-full"
+              className="rounded-xl shadow-md min-h-full w-full"
             />
           </div>
         </div>

@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 const ApproachCard = ({ id, title, details }) => {
   return (
     <div className="bg-primary rounded-lg border-t-4 border-secondary min-h-[30vh]">
