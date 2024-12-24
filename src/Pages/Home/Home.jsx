@@ -1,3 +1,4 @@
+import Approach from "./Approach";
 import Banner from "./Banner";
 import BannerExtra from "./BannerExtra";
 import BookConsultation from "./BookConsultation";
@@ -12,6 +13,7 @@ const Home = () => {
       <Discover />
       <Consultation />
       <BookConsultation />
+      <Approach />
     </div>
   );
 };
