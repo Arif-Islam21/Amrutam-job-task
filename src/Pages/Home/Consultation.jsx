@@ -1,5 +1,8 @@
 import ConsultaionCard from "../../Components/ConsultaionCard";
 import SectionTitle from "../../Components/SectionTitle";
+import consult1 from "../../assets/pictures/consult1.png";
+import consult2 from "../../assets/pictures/consult2.png";
+import consult3 from "../../assets/pictures/consult3.png";
 
 const Consultation = () => {
   return (
@@ -15,7 +18,7 @@ const Consultation = () => {
           </div>
           <div className="col-span-12 lg:col-span-4">
             <img
-              src="https://media.istockphoto.com/id/1420933542/photo/woman-hair-massage-at-home-stock-photo.jpg?s=612x612&w=0&k=20&c=D8cGOilaglYCv40WbHjiV2u-QFDhNMHlH2xxAtEmfdE="
+              src={consult2}
               alt="image here"
               className="rounded-xl shadow-md min-h-full"
             />
@@ -34,7 +37,7 @@ const Consultation = () => {
           </div>
           <div className="col-span-12 lg:col-span-3">
             <img
-              src="https://media.nature.com/lw767/magazine-assets/nindia.2020.101/nindia.2020.101_19310518.jpg"
+              src={consult1}
               alt="image here"
               className="rounded-xl shadow-md min-h-full"
             />
@@ -47,7 +50,7 @@ const Consultation = () => {
           </div>
           <div className="col-span-12 lg:col-span-3">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCsbCJ2JPObJ-YEH0Ld4QU0MzYqnXGfO-M2w&s"
+              src={consult3}
               alt="image here"
               className="rounded-xl shadow-md min-h-full"
             />

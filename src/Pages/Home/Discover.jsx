@@ -6,6 +6,7 @@ import { GiMeditation } from "react-icons/gi";
 import { FaHandHoldingHand } from "react-icons/fa6";
 import { GiMuscleUp } from "react-icons/gi";
 import { BsCupFill } from "react-icons/bs";
+import image from "../../assets/pictures/discoverMain.png";
 
 const Discover = () => {
   const firstThree = [
@@ -68,8 +69,8 @@ const Discover = () => {
           <div className="hero-content flex-col lg:flex-row">
             <div className="order-1 lg:order-2 mx-4">
               <img
-                src="https://img.freepik.com/premium-photo/serene-meditation-nature-background_391229-18765.jpg?ga=GA1.1.481348862.1727083279&semt=ais_hybrid"
-                className="max-w-xs size-56 rounded-full shadow-2xl"
+                src={image}
+                className="max-w-xs size-60 rounded-full shadow-2xl"
               />
             </div>
             <div className="order-2 lg:order-1 flex flex-col gap-8">

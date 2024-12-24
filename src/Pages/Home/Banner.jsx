@@ -8,7 +8,7 @@ const Banner = () => {
 
       {/* Right Half Background Image */}
       <div
-        className="absolute top-0 right-0 h-full w-1/2 bg-cover bg-right"
+        className="absolute top-0 right-0 h-full w-full lg:w-1/2 bg-cover bg-right"
         style={{
           backgroundImage: `url(${image})`,
         }}

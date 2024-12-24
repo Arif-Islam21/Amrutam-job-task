@@ -1,10 +1,11 @@
+import image from "../../assets/pictures/parallax.png";
+
 const BookConsultation = () => {
   return (
     <div
       className="hero bg-fixed bg-center bg-cover min-h-[70vh]"
       style={{
-        backgroundImage:
-          "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHezbZfIsI7w7LY1ihU_LvVtVV0_Sqlm3kOw&s)",
+        backgroundImage: `url(${image})`,
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
