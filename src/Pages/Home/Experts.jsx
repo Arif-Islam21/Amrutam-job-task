@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import { GrLinkNext } from "react-icons/gr";
 import { GrLinkPrevious } from "react-icons/gr";
+import { IoIosArrowForward } from "react-icons/io";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -48,13 +49,18 @@ const Experts = () => {
           <SwiperSlide className="min-h-[60vh]">
             <ExpertCard />
           </SwiperSlide>
-          <div className="custom-prev size-12 hidden lg:flex rounded-full  border justify-center items-center text-gray-500 ">
+          <div className="custom-prev size-12 hidden lg:flex rounded-full  border border-secondary justify-center items-center text-gray-500 ">
             <GrLinkPrevious />
           </div>
-          <div className="custom-next size-12 hidden lg:flex rounded-full  border justify-center items-center text-gray-500">
+          <div className="custom-next size-12 hidden lg:flex rounded-full  border border-secondary justify-center items-center text-gray-500">
             <GrLinkNext />
           </div>
         </Swiper>
+      </div>
+      <div className="max-w-[20vw] mx-auto rounded-md bg-secondary/20 border border-secondary text-secondary">
+        <h2 className="flex justify-center items-center gap-1 py-2 font-bold">
+          Findn More Experts <IoIosArrowForward size={18} />{" "}
+        </h2>
       </div>
     </div>
   );
