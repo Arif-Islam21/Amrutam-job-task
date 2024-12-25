@@ -21,7 +21,11 @@ const DiscoverCard = ({
         </p>
       </div>
       <div
-        className={`text-${textColor} border rounded-full p-4 bg-${bgColor}`}
+        className={` border rounded-full p-4 `}
+        style={{
+          backgroundColor: bgColor,
+          color: textColor,
+        }}
       >
         {icon}
       </div>
