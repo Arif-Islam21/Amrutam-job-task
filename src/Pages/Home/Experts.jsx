@@ -7,17 +7,26 @@ import { GrLinkPrevious } from "react-icons/gr";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import ExpertCard from "../../Components/home/ExpertCard";
 
 const Experts = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto pb-8">
       <SectionTitle title="Meet our Ayurveda experts" />
       <div className="">
         <Swiper
           watchSlidesProgress={true}
-          slidesPerView={3}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
           className="mySwiper min-h-[60vh]"
           loop={true}
+          spaceBetween={30}
           navigation={{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
@@ -27,14 +36,22 @@ const Experts = () => {
           }}
           modules={[Pagination, Navigation]}
         >
-          <SwiperSlide className="min-h-[60vh]">Slide 1</SwiperSlide>
-          <SwiperSlide className="min-h-[60vh]">Slide 2</SwiperSlide>
-          <SwiperSlide className="min-h-[60vh]">Slide 3</SwiperSlide>
-          <SwiperSlide className="min-h-[60vh]">Slide 4</SwiperSlide>
-          <div className="custom-prev size-12 rounded-full border flex justify-center items-center text-gray-500">
+          <SwiperSlide className="min-h-[60vh]">
+            <ExpertCard />
+          </SwiperSlide>
+          <SwiperSlide className="min-h-[60vh]">
+            <ExpertCard />
+          </SwiperSlide>
+          <SwiperSlide className="min-h-[60vh]">
+            <ExpertCard />
+          </SwiperSlide>
+          <SwiperSlide className="min-h-[60vh]">
+            <ExpertCard />
+          </SwiperSlide>
+          <div className="custom-prev size-12 hidden lg:flex rounded-full  border justify-center items-center text-gray-500 ">
             <GrLinkPrevious />
           </div>
-          <div className="custom-next size-12 rounded-full border flex justify-center items-center text-gray-500">
+          <div className="custom-next size-12 hidden lg:flex rounded-full  border justify-center items-center text-gray-500">
             <GrLinkNext />
           </div>
         </Swiper>
