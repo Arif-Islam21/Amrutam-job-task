@@ -14,7 +14,7 @@ const Experts = () => {
   return (
     <div className="container mx-auto pb-8">
       <SectionTitle title="Meet our Ayurveda experts" />
-      <div className="">
+      <div className="mb-8">
         <Swiper
           watchSlidesProgress={true}
           breakpoints={{
@@ -25,7 +25,7 @@ const Experts = () => {
               slidesPerView: 3,
             },
           }}
-          className="mySwiper min-h-[60vh]"
+          className="mySwiper "
           loop={true}
           spaceBetween={30}
           navigation={{
@@ -37,16 +37,16 @@ const Experts = () => {
           }}
           modules={[Pagination, Navigation]}
         >
-          <SwiperSlide className="min-h-[60vh]">
+          <SwiperSlide className="">
             <ExpertCard />
           </SwiperSlide>
-          <SwiperSlide className="min-h-[60vh]">
+          <SwiperSlide className="">
             <ExpertCard />
           </SwiperSlide>
-          <SwiperSlide className="min-h-[60vh]">
+          <SwiperSlide className="">
             <ExpertCard />
           </SwiperSlide>
-          <SwiperSlide className="min-h-[60vh]">
+          <SwiperSlide className="">
             <ExpertCard />
           </SwiperSlide>
           <div className="custom-prev size-12 hidden lg:flex rounded-full  border border-secondary justify-center items-center text-gray-500 ">
