@@ -57,7 +57,7 @@ const Experts = () => {
           </div>
         </Swiper>
       </div>
-      <div className="max-w-[20vw] mx-auto rounded-md bg-secondary/20 border border-secondary text-secondary">
+      <div className="mx-6  lg:max-w-[20vw] lg:mx-auto rounded-md bg-secondary/20 border border-secondary text-secondary">
         <h2 className="flex justify-center items-center gap-1 py-2 font-bold">
           Findn More Experts <IoIosArrowForward size={18} />{" "}
         </h2>
