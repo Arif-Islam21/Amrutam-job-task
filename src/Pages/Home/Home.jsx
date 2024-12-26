@@ -6,6 +6,7 @@ import BookConsultation from "./BookConsultation";
 import Consultation from "./Consultation";
 import Discover from "./Discover";
 import Experts from "./Experts";
+import GetApp from "./GetApp";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Approach />
       <Stories />
       <Experts />
+      <GetApp />
     </div>
   );
 };
